@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.edprojectfinal.ui.inicio.InicioFragment"
+        android:label="@string/nav_header_title"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/nav_clientes"
+        android:name="com.example.edprojectfinal.ui.clientes.ClientesFragment"
+        android:label="@string/menu_clientes"
+        tools:layout="@layout/fragment_clientes" />
+    <fragment
+        android:id="@+id/nav_servicios"
+        android:name="com.example.edprojectfinal.ui.servicios.ServiciosFragment"
+        android:label="@string/menu_servicios"
+        tools:layout="@layout/fragment_servicios" />
+    <fragment
+        android:id="@+id/nav_igv"
+        android:name="com.example.edprojectfinal.ui.igv.IgvFragment"
+        android:label="@string/menu_igv"
+        tools:layout="@layout/fragment_igv" />
+    <fragment
+        android:id="@+id/form_registrarCliente"
+        android:name="com.example.edprojectfinal.ui.clientes.RegistrarClienteFragment"
+        android:label="@string/menu_clientes"
+        tools:layout="@layout/fragment_registrar_cliente" />
+    <fragment
+        android:id="@+id/form_modificarCliente"
+        android:name="com.example.edprojectfinal.ui.clientes.ModificarClienteFragment"
+        android:label="@string/menu_clientes"
+        tools:layout="@layout/fragment_modificar_cliente" />
+    <fragment
+        android:id="@+id/form_eliminarCliente"
+        android:name="com.example.edprojectfinal.ui.clientes.EliminarClienteFragment"
+        android:label="@string/menu_clientes"
+        tools:layout="@layout/fragment_eliminar_cliente" />
+    <fragment
+        android:id="@+id/form_consultarCliente"
+        android:name="com.example.edprojectfinal.ui.clientes.ConsultarClienteFragment"
+        android:label="@string/menu_clientes"
+        tools:layout="@layout/fragment_consultar_cliente" />
+</navigation>

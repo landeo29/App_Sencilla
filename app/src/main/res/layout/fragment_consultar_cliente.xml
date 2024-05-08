@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.clientes.ConsultarClienteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/cintafondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cinta_form"
+            android:elevation="8dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_menu_clientes"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONSULTAR CLIENTE"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cintafondo">
+
+            <TextView
+                android:id="@+id/lbllistado_clientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Listado de Clientes"
+                android:textSize="16sp"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerClientes_listado"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/lbllistado_clientes"
+                android:layout_marginTop="20dp"></androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/lblseparador"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/recyclerClientes_listado"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/cinta_form"></TextView>
+
+            <TextView
+                android:id="@+id/lblrepresentante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblseparador"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="REPRESENTANTE:"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/txtrepresentante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblrepresentante"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:enabled="false"></EditText>
+
+            <TextView
+                android:id="@+id/lbltelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtrepresentante"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="CELULAR:"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/txttelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbltelefono"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:enabled="false"></EditText>
+
+            <TextView
+                android:id="@+id/lblemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txttelefono"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="EMAIL:"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblemail"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:enabled="false"></EditText>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/BotonesFlotantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-8dp"
+        app:fab_addButtonColorNormal="@color/botonflotante"
+        app:fab_addButtonColorPressed="@color/botonflotante">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/bfConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/cinta_form"
+            app:fab_icon="@drawable/ic_bfconfirmar"
+            app:fab_size="mini">
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/bfActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/cinta_form"
+            app:fab_icon="@drawable/ic_bfactualizar"
+            app:fab_size="mini">
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/bfEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/cinta_form"
+            app:fab_icon="@drawable/ic_bfeliminar"
+            app:fab_size="mini">
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

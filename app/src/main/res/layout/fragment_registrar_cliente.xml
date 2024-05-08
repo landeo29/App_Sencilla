@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.clientes.RegistrarClienteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/cintafondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cinta_form"
+            android:elevation="8dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_menu_clientes">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTRAR CLIENTE"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cintafondo"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/lblruc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="RUC:"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/txtruc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblruc"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Ingrese número de ruc"></EditText>
+
+            <TextView
+                android:id="@+id/lblrazon_social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtruc"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="RAZÓN SOCIAL:"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/txtrazon_social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblrazon_social"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Ingrese razón social"></EditText>
+
+            <TextView
+                android:id="@+id/lblrepresentante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtrazon_social"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="REPRESENTANTE:"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/txtrepresentante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblrepresentante"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Ingrese nombre del representante"></EditText>
+
+            <TextView
+                android:id="@+id/lbltelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtrepresentante"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="CELULAR:"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/txttelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbltelefono"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Ingrese número del representante"></EditText>
+
+            <TextView
+                android:id="@+id/lblemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txttelefono"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="EMAIL:"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblemail"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Ingrese email del representante"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtemail">
+
+                <Button
+                    android:id="@+id/btnguardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#A2BAB9"
+                    android:text="GUARDAR"
+                    android:textSize="16sp"></Button>
+
+                <Button
+                    android:id="@+id/btncancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#A2BAB9"
+                    android:text="CANCELAR"
+                    android:textSize="16sp"></Button>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

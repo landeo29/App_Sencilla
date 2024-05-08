@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EDProjectFINAL</string>
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="navigation_drawer_close">Cerrar</string>
+    <string name="nav_header_title">ESTUDIO CONTABLE</string>
+    <string name="nav_header_subtitle">estudiocontable@gmail.com</string>
+    <string name="nav_header_desc">Cabecera</string>
+    <string name="action_settings">Opciones</string>
+
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_clientes">Clientes</string>
+    <string name="menu_servicios">Servicios</string>
+    <string name="menu_igv">Calcular IGV</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
